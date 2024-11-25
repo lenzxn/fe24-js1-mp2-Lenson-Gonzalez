@@ -75,7 +75,6 @@ function handleDiceRoll() {
       diceElement[0].style.display = "flex";
       alert("YOU THREW : 1 OPS! NO POINTS! :(");
       clearRound();
-      diceReset();
       break;
     case 2:
       diceElement[1].style.display = "flex";
