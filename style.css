@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.playbtn {
+  background-color: white;
+  border-radius: 1rem;
+  border: solid black;
+  text-align: center;
+  width: 8rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.diceThrow {
+  display: none;
+  flex-direction: column;
+  gap: 3rem;
+}
+.playercard {
+  display: none;
+  gap: 2rem;
+  flex-direction: column;
+}
+.btn {
+  display: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem;
+  border: solid black;
+  padding: 1rem;
+}
+.logo {
+  background-color: black;
+  color: red;
+  padding: 2rem;
+  text-align: center;
+}
+.playboard {
+  justify-content: space-evenly;
+  background-color: blanchedalmond;
+  padding: 5%;
+  display: flex;
+}
+
+.diceboard {
+  background-color: blanchedalmond;
+  padding: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.die {
+  padding: 1%;
+  width: 15%;
+  aspect-ratio: 1/1;
+  border-radius: 5%;
+  border: 2px solid gray;
+  background: hsl(40, 30%, 98%);
+  display: flex;
+}
+
+/* dots */
+.die div {
+  background: black;
+  border-radius: 50%;
+  width: 25%;
+  aspect-ratio: 1/1;
+}
+
+/* one */
+.one {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* two */
+.two {
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+/* three */
+.three {
+  justify-content: space-around;
+  align-items: center;
+  display: none;
+}
+.three > :first-child {
+  align-self: flex-start;
+}
+.three > :last-child {
+  align-self: flex-end;
+}
+
+/* four */
+.four {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+.four > :first-child,
+.four > :nth-child(2) {
+  align-self: flex-start;
+}
+.four > :first-child,
+.four > :nth-child(3) {
+  margin-right: 50%;
+}
+
+/* five */
+.five {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.five > :first-child,
+.five > :nth-child(4) {
+  margin-right: 50%;
+}
+.five > :nth-child(3) {
+  margin: 0 37.5%;
+  justify-self: center;
+  align-self: center;
+}
+.five > :last-child,
+.five > :nth-child(4) {
+  align-self: flex-end;
+}
+
+/* six */
+.six {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.six > :nth-child(2n + 1) {
+  margin-right: 50%;
+}
+.six > :nth-child(3),
+.six > :nth-child(4) {
+  align-self: center;
+}
+.six > :nth-child(5),
+.six > :last-child {
+  align-self: flex-end;
+}
